@@ -27,8 +27,8 @@ public class TestGooglePage {
 
     @Test
     public void getLogo() {
-        actualString = driver.findElement(By.cssSelector("meta[property='twitter:image']")).getAttribute("property");
-        Assert.assertEquals(actualString, "twitter:image");
+        actualString = driver.findElement(By.cssSelector("img[id='hplogo']")).getAttribute("alt");
+        Assert.assertEquals(actualString, "Google");
         System.out.println(actualString);
     }
 
